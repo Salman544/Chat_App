@@ -12,7 +12,7 @@ This is Chat App
 7-Notification<br />
 8-Bakground Services<br />
 
-##ScreenShots (Zoom this Page to 50%)
+# ScreenShots (Zoom this Page to 50%)
 
 ![screenshot_1508436621](https://user-images.githubusercontent.com/31056603/31788200-8133f8c8-b527-11e7-992a-f5fe0f02c7e8.png)
 ![screenshot_1508436626](https://user-images.githubusercontent.com/31056603/31788241-9bcb585c-b527-11e7-95cc-1b6bab7965c5.png)
