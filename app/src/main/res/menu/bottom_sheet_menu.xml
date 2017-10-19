@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/copy_image"
+        android:title="Copy"
+        android:icon="@drawable/ic_content_copy"/>
+
+    <item
+        android:id="@+id/share_image"
+        android:title="Forward"
+        android:icon="@drawable/ic_share"/>
+
+    <item
+        android:id="@+id/delete_image"
+        android:title="Delete"
+        android:icon="@drawable/ic_delete"/>
+
+
+</menu>

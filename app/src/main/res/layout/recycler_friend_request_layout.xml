@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_friend_request_recycler_layout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="?attr/selectableItemBackground">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_user_profile_pic_recycler"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:contentDescription="@string/user_profile_pic"
+        android:src="@drawable/fb"/>
+
+
+    <TextView
+        android:id="@+id/add_user_text_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/add_user_profile_pic_recycler"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/add_user_profile_pic_recycler"
+        android:layout_toRightOf="@+id/add_user_profile_pic_recycler"
+        android:textColor="#9a000000"
+        android:textSize="17sp"
+        tools:targetApi="jelly_bean"/>
+
+    <Button
+        android:id="@+id/add_friend_request_recycler"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/add_user_profile_pic_recycler"
+        android:layout_alignLeft="@+id/add_user_text_recycler"
+        android:layout_alignStart="@+id/add_user_text_recycler"
+        android:backgroundTint="@color/md_blue_500"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/add_friend"
+        android:textAllCaps="false"
+        android:textColor="@color/md_white_1000"
+        tools:targetApi="lollipop"/>
+
+
+    <Button
+        android:id="@+id/cancel_friend_request_recycler"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/add_friend_request_recycler"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/add_friend_request_recycler"
+        android:layout_toRightOf="@+id/add_friend_request_recycler"
+        android:backgroundTint="@color/md_blue_grey_500"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/md_white_1000"
+        tools:targetApi="lollipop"/>
+
+
+
+</RelativeLayout>

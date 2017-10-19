@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_recycler_layout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_profile_pic_recycler"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:contentDescription="@string/user_profile_pic"/>
+
+    <TextView
+        android:id="@+id/notification_text_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notification_profile_pic_recycler"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/notification_profile_pic_recycler"
+        android:layout_toRightOf="@+id/notification_profile_pic_recycler"
+        android:maxLength="47"
+        android:textColor="#8d000000"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText"
+        tools:targetApi="jelly_bean"/>
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/notification_text_recycler"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"/>
+
+</RelativeLayout>

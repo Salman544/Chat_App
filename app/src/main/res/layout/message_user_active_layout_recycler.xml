@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_active_friend_list_recycler_layout"
+    android:layout_width="100dp"
+    android:layout_height="72dp"
+    android:background="?attr/selectableItemBackground">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_active_friends_profile_picture"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:contentDescription="@string/user_profile_pic"
+        android:src="@drawable/fb"/>
+
+
+    <ImageView
+        android:elevation="5dp"
+        android:id="@+id/message_active_friend_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/active_friends"
+        android:contentDescription="active friends"
+        tools:ignore="HardcodedText"
+        android:layout_alignBottom="@+id/message_active_friends_profile_picture"
+        android:layout_alignRight="@+id/message_active_friends_profile_picture"
+        android:layout_alignEnd="@+id/message_active_friends_profile_picture"
+        tools:targetApi="lollipop"/>
+
+</RelativeLayout>

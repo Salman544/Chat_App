@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/md_blue_500</item>
+        <!-- <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item> -->
+
+    </style>
+
+
+    <style name="ProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+        <item name="android:colorAccent" tools:targetApi="lollipop">#2A7A92</item>
+
+    </style>
+
+    <style name="CheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+
+        <item name="android:buttonTint" tools:targetApi="lollipop">#2A7A92</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">#2A7A92</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ToolbarSubTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cat"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".findfriends.ui.LoginActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:elevation="5dp"
+        android:paddingTop="5dp"
+        android:textColorHint="@color/grey_bermuda"
+        tools:targetApi="lollipop">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/email_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_bermuda"
+            android:hint="@string/e_mail_adress"
+            android:imeOptions="actionGo"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColor="#caffffff"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:textColorHint="@color/grey_bermuda"
+        tools:targetApi="lollipop">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/pass_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_bermuda"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:textColor="#caffffff"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sign_in_btn_email"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/ripple"
+        android:text="@string/sign_in"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:onClick="signinBtn"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sign_up_email_btn"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/ripple"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="15sp"
+        android:onClick="signupBtn"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/login_in_as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/login_in_as"
+            android:textColor="@color/pattern_blue"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/google_log_in"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/login_in_as"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/google"
+            android:contentDescription="@string/google"
+            android:foreground="@drawable/ripple_img"
+            android:onClick="googleSignin"/>
+
+        <ImageView
+            android:id="@+id/facebook_login"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/google_log_in"
+            android:layout_below="@+id/login_in_as"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/google_log_in"
+            android:layout_toRightOf="@+id/google_log_in"
+            android:background="@drawable/facebook"
+            android:contentDescription="@string/facebook"
+            android:foreground="@drawable/ripple_img"
+            android:onClick="facebookSignin"/>
+
+        <ImageView
+            android:id="@+id/twitter_login"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/login_in_as"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/facebook_login"
+            android:layout_toRightOf="@+id/facebook_login"
+            android:background="@drawable/twitter"
+            android:contentDescription="@string/twitter"
+            android:onClick="twitterSignin"
+            android:foreground="@drawable/ripple_img"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/forgot_password_btn"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="25dp"
+        android:foreground="@drawable/ripple_img"
+        android:text="@string/forgot_password"
+        android:textColor="@color/pattern_blue"
+        android:textStyle="bold"
+        android:onClick="forgotPassword"/>
+
+
+</LinearLayout>

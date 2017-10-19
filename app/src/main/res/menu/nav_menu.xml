@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:checkable="false"
+        tools:ignore="HardcodedText"/>
+
+
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/ic_nav_person"
+        android:title="My Profile"
+        android:checkable="false"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        android:checkable="false"
+        tools:ignore="HardcodedText"/>
+
+
+</menu>

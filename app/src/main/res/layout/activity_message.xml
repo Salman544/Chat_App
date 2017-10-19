@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/rel"
+    tools:context="com.salman.firebasefindfriends.findfriends.ui.MessageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/message_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/md_blue_grey_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:subtitleTextAppearance="@style/ToolbarSubTitle"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_message_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_toolbar"
+        app:stackFromEnd="true"
+        android:layout_above="@+id/card_view_msg"
+        android:adjustViewBounds="true"
+        tools:listitem="@layout/sender_recycler_message_layout"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/md_white_1000"
+        app:cardElevation="@dimen/small_margin">
+
+
+            <EditText
+                android:layout_marginLeft="35dp"
+                android:id="@+id/edit_send_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:hint="Enter a message"
+                android:padding="15dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:inputType="textMultiLine|textShortMessage"
+                tools:ignore="HardcodedText"
+                android:layout_marginStart="35dp"/>
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/send_msg_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_send_disable"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="end"
+                tools:ignore="ContentDescription"/>
+
+            <ImageButton
+                android:onClick="imageFabButtonClick"
+                android:id="@+id/image_fab_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:background="@drawable/fab_action_btn"
+                android:foreground="?attr/selectableItemBackground"
+                app:srcCompat="@drawable/ic_add"
+                android:layout_marginTop="16dp"
+                tools:ignore="ContentDescription"/>
+
+
+    </android.support.v7.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/full_screen_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:targetApi="lollipop"/>
+
+</RelativeLayout>

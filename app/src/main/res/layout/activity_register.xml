@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cat"
+    tools:context=".findfriends.ui.RegisterActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#FBFBFC"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/closeCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:foreground="@drawable/ripple_img"
+                    android:onClick="closeActivity"
+                    app:srcCompat="@drawable/ic_close"
+                    tools:ignore="ContentDescription"/>
+
+
+                <ProgressBar
+                    android:id="@+id/register_progress_bar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/user_profile_pic"
+                    android:layout_alignStart="@+id/user_profile_pic"
+                    android:layout_alignTop="@+id/user_profile_pic"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/user_profile_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignEnd="@+id/textView"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignTop="@+id/closeCardView"
+                    android:background="@drawable/circle"
+                    android:contentDescription="@string/user_profile_pic"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_camera_"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/register_image_view"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignLeft="@+id/user_profile_pic"
+                    android:layout_alignStart="@+id/user_profile_pic"
+                    android:layout_alignTop="@+id/user_profile_pic"
+                    android:onClick="takePicture"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/user_name_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="90dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/user_name_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#73000000"
+                        android:hint="@string/name"
+                        android:imeOptions="actionGo"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="15dp"
+                        tools:targetApi="lollipop"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/email_register_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name_text_input"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/email_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#73000000"
+                        android:hint="@string/e_mail_adress"
+                        android:imeOptions="actionGo"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="15dp"
+                        tools:targetApi="lollipop"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/pass_register_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_occupation_text_input"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/pass_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#73000000"
+                        android:hint="@string/password"
+                        android:imeOptions="actionGo"
+                        android:inputType="textPassword"
+                        android:paddingBottom="15dp"
+                        tools:targetApi="lollipop"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/confirm_pass_register_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass_register_text_input"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/confirm_pass_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#73000000"
+                        android:hint="@string/retype_password_again"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingBottom="15dp"
+                        tools:targetApi="lollipop"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/appCompatCheckBox"
+                    style="@style/CheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirm_pass_register_text_input"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="20sp"
+                    android:text="@string/i_agree_all_terms_and_statements"
+                    android:textSize="15sp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/appCompatCheckBox"
+                    android:layout_alignStart="@+id/appCompatCheckBox"
+                    android:layout_below="@+id/appCompatCheckBox"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="#2A7A92"
+                    android:textSize="15sp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/register_occupation_text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_register_text_input"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/register_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#73000000"
+                        android:hint="Occupation"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:paddingBottom="15dp"
+                        tools:targetApi="lollipop"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/sign_up_register_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#4897E7"
+                    android:clickable="true"
+                    android:foreground="@drawable/ripple_img"
+                    android:onClick="registerBtn"
+                    android:text="@string/sign_up"
+                    android:textColor="#fff"
+                    android:textSize="15sp"/>
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="verifyBtn"
+                    android:src="@drawable/ic_info"
+                    app:rippleColor="@color/md_grey_100"
+                    tools:ignore="VectorDrawableCompat"
+                    android:layout_above="@+id/sign_up_register_btn"
+                    android:layout_alignRight="@+id/closeCardView"
+                    android:layout_alignEnd="@+id/closeCardView"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginEnd="9dp"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

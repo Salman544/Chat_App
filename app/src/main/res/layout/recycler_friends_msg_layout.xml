@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/recycler_friend_message_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/msg_friend_profile_picture"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:contentDescription="@string/user_profile_pic"
+        android:src="@drawable/fb"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/not_read_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/not_read_message"
+        android:gravity="center"
+        android:textColor="@color/md_white_1000"
+        android:layout_alignBottom="@+id/msg_friend_profile_picture"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:autoSizeMaxTextSize="@dimen/small_margin"
+        android:layout_alignTop="@+id/msg_friend_profile_picture"
+        android:layout_toRightOf="@+id/msg_friend_profile_picture"
+        android:layout_toEndOf="@+id/msg_friend_profile_picture"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        tools:targetApi="o"
+        android:layout_toStartOf="@+id/time_message"
+        android:layout_toLeftOf="@+id/time_message"
+        android:id="@+id/textView6"/>
+
+    <TextView
+        android:id="@+id/outer_small_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:singleLine="true"
+        android:textColor="#ac000000"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"/>
+
+    <TextView
+        android:id="@+id/time_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.Small"
+        android:autoSizeMaxTextSize="@dimen/small_margin"
+        android:textColor="#000000"
+        android:layout_above="@+id/outer_small_message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="2dp"
+        tools:targetApi="o"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".findfriends.ui.UserFriendListActivity">
+
+
+    <TextView
+        android:id="@+id/no_friends_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Friends"
+        android:layout_centerInParent="true"
+        android:textColor="@color/md_black_1000"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        android:id="@+id/user_friend_list_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_friend_list"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/md_blue_grey_500">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_uf1"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textColor="@color/md_white_1000"
+            android:background="@drawable/rect_circle"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_friend_list"
+        android:id="@+id/user_friend_recycler_view"
+        tools:listitem="@layout/firend_user_list_recycler_layout"/>
+
+</RelativeLayout>

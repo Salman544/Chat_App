@@ -1,0 +1,24 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salman.firebasefindfriends.findfriends.ui.FragmentImage"
+    tools:targetApi="lollipop"
+    android:background="#dd333333"
+    android:elevation="@dimen/small_margin">
+
+    <ImageView
+        android:id="@+id/full_screen_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        tools:ignore="ContentDescription"/>
+
+    <ProgressBar
+        android:id="@+id/full_screen_image_view_progress"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

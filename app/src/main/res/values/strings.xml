@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Firebase Find Friends</string>
+    <string name="title_activity_main">Firebase</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="e_mail_adress">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="retype_password_again">Retype password again</string>
+    <string name="i_agree_all_terms_and_statements">I agree all terms and statements.</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="your_string_here">This is <u>underline</u>.</string>
+    <string name="blue_fire">blue fire</string>
+    <string name="sign_out">Sign out</string>
+    <string name="enter_the_text">Enter the text</string>
+    <string name="music">Music</string>
+    <string name="play_music">Play Music</string>
+    <string name="user_profile_pic">User Profile Pic</string>
+    <string name="login_in_as">Login in as</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_friend">Find Friend</string>
+    <string name="search">Search</string>
+    <string name="search_friend">Search Friend</string>
+    <string name="muhammad_salman_zafar">Muhammad Salman Zafar</string>
+    <string name="add_friend">Add Friend</string>
+    <string name="see_info">See info</string>
+    <string name="link">link</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="location">location</string>
+    <string name="rawalpindi_pakistan">Rawalpindi, Pakistan</string>
+    <string name="views">views</string>
+    <string name="friend_request">Friend Requests</string>
+    <string name="cancel">Cancel</string>
+</resources>
